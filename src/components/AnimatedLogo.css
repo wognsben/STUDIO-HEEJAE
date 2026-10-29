@@ -1,0 +1,8 @@
+.logo.animated-logo{position:relative;aspect-ratio:538/72;display:block;color:#000;isolation:isolate}
+.animated-logo:hover,.animated-logo:focus-visible{color:#000;background:transparent}
+.animated-logo .logo-stage{position:absolute;inset:50% 0 auto;transform:translateY(-50%);font-family:'Times New Roman',Times,serif;font-size:1.65rem;font-weight:400;line-height:1;perspective:700px;white-space:pre;font-kerning:none;letter-spacing:-.035em}
+.animated-logo .logo-fit{position:relative;display:inline-block;transform-origin:left center;transform-style:preserve-3d}
+.animated-logo .logo-layer{display:block;white-space:pre;transform-style:preserve-3d}
+.animated-logo .logo-layer:not(:last-child){position:absolute;left:0;top:0;visibility:hidden}
+.animated-logo .logo-char{display:inline-block;backface-visibility:hidden;transform-style:preserve-3d}
+@media(prefers-reduced-motion:reduce){.animated-logo .logo-layer:not(:last-child){display:none}}

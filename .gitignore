@@ -1,0 +1,12 @@
+# node_modules and dist are intentionally tracked at the owner's request.
+node_modules/.vite/
+node_modules/.vite-temp/
+node_modules/.cache/
+*.tsbuildinfo
+*.log
+.env
+.env.*
+!.env.example
+.npmrc
+.DS_Store
+Thumbs.db
