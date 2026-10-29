@@ -1,5 +1,6 @@
-:root{--color-black:#000;--color-white:#fff;--color-yellow:#ecea6b;--color-yellow-text:#747222;--color-description:#909090;--grid-gap:1rem;--page-padding:1rem;--home-row-gap:5rem;font-family:Arial,'Noto Sans KR','Malgun Gothic',sans-serif;color:var(--color-black);background:var(--color-white);font-synthesis:none;font-weight:400;font-size:20px;line-height:1.4}
-@media(min-width:640px){:root{--page-padding:1.25rem;--home-row-gap:3rem}}
-@media(min-width:832px){:root{--page-padding:1.5rem;--home-row-gap:6rem}}
+:root{--page-content-offset:28px;--color-black:#000;--color-white:#fff;--color-yellow:#ecea6b;--color-yellow-text:#747222;--color-description:#909090;--grid-gap:1rem;--page-padding:1rem;--home-row-gap:5rem;font-family:Arial,'Noto Sans KR','Malgun Gothic',sans-serif;color:var(--color-black);background:var(--color-white);font-synthesis:none;font-weight:400;font-size:20px;line-height:1.4}
+@media(min-width:640px){:root{--page-content-offset:32px;--page-padding:1.25rem;--home-row-gap:3rem}}
+@media(min-width:832px){:root{--page-content-offset:48px;--page-padding:1.5rem;--home-row-gap:6rem}}
 @media(min-width:1088px){:root{--page-padding:2rem}}
 @media(min-width:1280px){:root{font-size:1.48889vw}}
+
