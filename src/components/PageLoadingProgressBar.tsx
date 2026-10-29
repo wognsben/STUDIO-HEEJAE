@@ -23,7 +23,7 @@ export function PageLoadingProgressBar({pagePending,activity=0}:{pagePending:boo
   function show(){shown.current=true;gsap.set(node,{visibility:'visible',opacity:1,width:reduced?'24%':'32%',xPercent:0});}
   if(pending){
    show();node.dataset.state='loading';
-   if(!reduced)animation=gsap.to(node,{xPercent:320,duration:1.1,ease:'none',repeat:-1});
+   if(!reduced)animation=gsap.to(node,{xPercent:320,duration:1.3,ease:'none',repeat:-1});
   }else if(shown.current||changed){
    // Even a same-commit filter update or instant route commit is presented.
    // This only animates the indicator; the content is already free to render.
@@ -31,12 +31,12 @@ export function PageLoadingProgressBar({pagePending,activity=0}:{pagePending:boo
    node.dataset.state='completing';
    const finish=()=>{clearTimeout(timer);shown.current=false;node.dataset.state='idle';};
    animation=gsap.timeline({onComplete:finish})
-    .to(node,{width:'100%',xPercent:0,opacity:1,duration:reduced?0:.14,ease:'power2.out'})
-    .to(node,{opacity:0,duration:reduced?0:.2,delay:reduced?.16:.08})
+    .to(node,{width:'100%',xPercent:0,opacity:1,duration:reduced?0:.22,ease:'power2.out'})
+    .to(node,{opacity:0,duration:reduced?0:.26,delay:reduced?.16:.10})
     .set(node,{visibility:'hidden'});
    timer=setTimeout(()=>{
     animation?.kill();gsap.set(node,{width:'100%',xPercent:0,opacity:0,visibility:'hidden'});finish();
-   },700);
+   },900);
   }else{
    node.dataset.state='idle';gsap.set(node,{visibility:'hidden',opacity:0});
   }
